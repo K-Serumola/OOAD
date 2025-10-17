@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="139.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.demo.ooadassignment.HomePageControler">
+   <children>
+      <SplitPane dividerPositions="0.1852610030706244" layoutX="110.0" layoutY="40.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label layoutX="10.0" layoutY="2.0" text="Main Menu" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Welcome" />
+                  <Button fx:id="cheque" layoutX="14.0" layoutY="41.0" mnemonicParsing="false" onAction="#openCheckings" text="Chequeings" />
+                  <Button fx:id="investment" layoutX="107.0" layoutY="41.0" mnemonicParsing="false" onAction="#openInvestments" text="Investments" />
+                  <Button fx:id="savings" layoutX="203.0" layoutY="41.0" mnemonicParsing="false" onAction="#openSavings" text="Savings" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

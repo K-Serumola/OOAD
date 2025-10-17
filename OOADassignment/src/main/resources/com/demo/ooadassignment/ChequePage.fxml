@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="336.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.demo.ooadassignment.ChequePageControler">
+   <children>
+      <SplitPane dividerPositions="0.1" layoutX="14.0" layoutY="36.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="10.0" text="Chequings account" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="47.0" text="Blalance :" />
+                  <Label fx:id="balance" layoutX="78.0" layoutY="46.0" prefHeight="18.0" prefWidth="152.0" />
+                  <Label layoutX="71.0" layoutY="47.0" text="P" />
+                  <Label layoutX="14.0" layoutY="29.0" text="Account no :" />
+                  <Label fx:id="accountno" layoutX="97.0" layoutY="29.0" prefHeight="18.0" prefWidth="152.0" />
+                  <SplitPane dividerPositions="0.5" layoutX="31.0" layoutY="77.0" prefHeight="201.0" prefWidth="283.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="118.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" text="Deposit" />
+                              <Label layoutX="14.0" layoutY="39.0" text="Amount :" />
+                              <Label layoutX="10.0" layoutY="70.0" text="P" />
+                              <TextField fx:id="depoamount" layoutX="21.0" layoutY="66.0" prefHeight="18.0" prefWidth="102.0" promptText="Enter quantity" />
+                              <Button layoutX="38.0" layoutY="109.0" mnemonicParsing="false" text="Comfirm" />
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" text="Withdraw" />
+                              <Label layoutX="14.0" layoutY="42.0" text="Amount :" />
+                              <Label layoutX="10.0" layoutY="68.0" text="P" />
+                              <TextField fx:id="withdrawammount" layoutX="21.0" layoutY="63.0" prefHeight="26.0" prefWidth="102.0" promptText="Enter puantity" />
+                              <Button layoutX="37.0" layoutY="108.0" mnemonicParsing="false" text="Comfirm" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+                  <Label layoutX="34.0" layoutY="300.0" prefHeight="26.0" prefWidth="283.0" textFill="RED" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

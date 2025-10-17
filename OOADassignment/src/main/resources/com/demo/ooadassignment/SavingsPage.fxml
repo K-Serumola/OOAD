@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="384.0" prefWidth="287.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.demo.ooadassignment.SavingsPageConroler">
+   <children>
+      <SplitPane dividerPositions="0.1" layoutX="99.0" layoutY="58.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="10.0" text="Settings" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Account number :" />
+                  <Label fx:id="accountnumber" layoutX="119.0" layoutY="14.0" prefHeight="18.0" prefWidth="150.0" />
+                  <Label layoutX="14.0" layoutY="32.0" text="Balance :" />
+                  <Label layoutX="72.0" layoutY="32.0" text="P" />
+                  <Label fx:id="balance" layoutX="79.0" layoutY="32.0" prefHeight="18.0" prefWidth="150.0" />
+                  <Label layoutX="14.0" layoutY="50.0" text="Interest rate :" />
+                  <Label fx:id="interest" layoutX="94.0" layoutY="50.0" prefHeight="18.0" prefWidth="142.0" />
+                  <SplitPane dividerPositions="0.01612903225806452" layoutX="49.0" layoutY="90.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" text="Deposit" />
+                              <Label layoutX="14.0" layoutY="32.0" text="Amount" />
+                              <Label layoutX="10.0" layoutY="57.0" text="P" />
+                              <TextField fx:id="depositamount" layoutX="24.0" layoutY="52.0" prefHeight="26.0" prefWidth="122.0" promptText="Enter quantity" />
+                              <Button layoutX="46.0" layoutY="115.0" mnemonicParsing="false" text="Comfirm" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+                  <Label fx:id="errormessage" layoutX="24.0" layoutY="308.0" prefHeight="18.0" prefWidth="219.0" textFill="RED" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
