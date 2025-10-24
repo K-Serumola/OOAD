@@ -9,7 +9,7 @@
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                <children>
-                  <Label layoutX="14.0" layoutY="10.0" text="Settings" />
+                  <Label layoutX="14.0" layoutY="10.0" text="Savings" />
                </children>
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
@@ -30,7 +30,7 @@
                               <Label layoutX="14.0" layoutY="32.0" text="Amount" />
                               <Label layoutX="10.0" layoutY="57.0" text="P" />
                               <TextField fx:id="depositamount" layoutX="24.0" layoutY="52.0" prefHeight="26.0" prefWidth="122.0" promptText="Enter quantity" />
-                              <Button layoutX="46.0" layoutY="115.0" mnemonicParsing="false" text="Comfirm" />
+                              <Button layoutX="46.0" layoutY="115.0" mnemonicParsing="false" onAction="#deposit" text="Comfirm" />
                            </children>
                         </AnchorPane>
                     </items>

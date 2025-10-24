@@ -1,7 +1,7 @@
 package com.demo.ooadassignment;
 
 public class Investments extends Account implements Withdraw, Interest {
-    float interesRate;
+    float interesRate = 0.5F;
 
     public Investments(Customer customerID, int accountNo, double balance, String branch, float interesRate) {
         super(customerID,accountNo,balance,branch);

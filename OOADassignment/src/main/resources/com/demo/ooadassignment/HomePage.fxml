@@ -18,6 +18,7 @@
                   <Button fx:id="cheque" layoutX="14.0" layoutY="41.0" mnemonicParsing="false" onAction="#openCheckings" text="Chequeings" />
                   <Button fx:id="investment" layoutX="107.0" layoutY="41.0" mnemonicParsing="false" onAction="#openInvestments" text="Investments" />
                   <Button fx:id="savings" layoutX="203.0" layoutY="41.0" mnemonicParsing="false" onAction="#openSavings" text="Savings" />
+                  <Label fx:id="cusname" layoutX="72.0" layoutY="13.0" prefHeight="18.0" prefWidth="230.0" />
                </children>
             </AnchorPane>
         </items>
