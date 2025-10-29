@@ -10,6 +10,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import java.io.IOException;
+import java.util.EventObject;
 
 public class LoginPageControler {
     @FXML private TextField username;
@@ -31,7 +32,7 @@ public class LoginPageControler {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("HomePage.fxml"));
             Parent root = loader.load();
 
-            // ✅ Get HomePage controller and pass customer ID
+            // Get HomePage controller and pass customer ID
             HomePageControler homeController = loader.getController();
             homeController.setCustomerID(cusid);
 
@@ -41,5 +42,18 @@ public class LoginPageControler {
         } else {
             error.setText("Invalid username or password!");
         }
+    }
+    @FXML
+    public void openCreationPage(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("CustomerCreation.fxml"));
+        Parent root = loader.load();
+
+        // Get the current stage
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        // Set the new scene
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 }
