@@ -1,5 +1,7 @@
 package com.demo.ooadassignment;
 
+import java.io.IOException;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -8,7 +10,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import java.io.IOException;
 
 public class AccountCreationControler {
 
@@ -59,7 +60,7 @@ public class AccountCreationControler {
     //investment account creation logic
     @FXML
     public void makeInvestmentAccount(ActionEvent event) throws IOException {
-        Investments newInvestmentAccount = new Investments(customerID,accountID+2,initialDepositAmount,branch,0.5f);
+        Investments newInvestmentAccount = new Investments(customerID,accountID+2,initialDepositAmount,branch,5.0f);
     }
 
 
