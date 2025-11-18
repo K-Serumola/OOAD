@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="296.0" prefWidth="192.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.demo.ooadassignment.AccountCreationControler">
+   <children>
+      <SplitPane dividerPositions="0.2" layoutX="85.0" layoutY="51.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label layoutX="24.0" layoutY="10.0" prefHeight="35.0" prefWidth="141.0" text="Account creation menu" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Button layoutX="64.0" layoutY="23.0" mnemonicParsing="false" onAction="#makeCheckings" text="Cheque" />
+                  <Button layoutX="54.0" layoutY="90.0" mnemonicParsing="false" onAction="#makeInvestment" text="Investment" />
+                  <Button layoutX="64.0" layoutY="158.0" mnemonicParsing="false" onAction="#makeSavings" text="Savings" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

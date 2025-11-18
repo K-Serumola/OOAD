@@ -10,7 +10,6 @@ public class SavingsPageConroler {
     @FXML private Label accountno;
     @FXML private Label balance;
     @FXML private TextField depoamount;
-    @FXML private TextField withdrawamount;
     @FXML private TextField interest;
 
     private Account acc; // store this customer's Savings account
