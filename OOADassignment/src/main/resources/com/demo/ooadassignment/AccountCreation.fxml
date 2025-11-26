@@ -17,6 +17,7 @@
                   <Button layoutX="64.0" layoutY="23.0" mnemonicParsing="false" onAction="#makeCheckings" text="Cheque" />
                   <Button layoutX="54.0" layoutY="90.0" mnemonicParsing="false" onAction="#makeInvestment" text="Investment" />
                   <Button layoutX="64.0" layoutY="158.0" mnemonicParsing="false" onAction="#makeSavings" text="Savings" />
+                  <Button layoutX="14.0" layoutY="205.0" mnemonicParsing="false" onAction="#backtologin" prefHeight="26.0" prefWidth="168.0" text="To Login" />
                </children></AnchorPane>
         </items>
       </SplitPane>

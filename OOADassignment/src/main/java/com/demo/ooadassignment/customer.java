@@ -69,7 +69,7 @@ public class Customer {
                 return c.getCustomerID(); // match found
             }
         }
-        return 0; // no match
+        return 900; // no match
     }
 
     public static Customer getLiveCustomer(int customerID) {

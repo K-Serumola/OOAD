@@ -15,12 +15,12 @@
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                <children>
                   <TextField fx:id="InvestmentInitialDeposit" layoutX="225.0" layoutY="81.0" />
-                  <Label layoutX="14.0" layoutY="27.0" prefHeight="18.0" prefWidth="460.0" text=" Please note that this accoun will be subject to an interest rate of 5% " />
+                  <Label layoutX="14.0" layoutY="27.0" prefHeight="18.0" prefWidth="460.0" text=" Please note that this accoun will be subject to an interest rate of 0.5% " />
                   <Label layoutX="14.0" layoutY="45.0" prefHeight="18.0" prefWidth="353.0" text="As such an initial deposit is necesary on creation for charging" />
                   <Label layoutX="140.0" layoutY="85.0" prefHeight="18.0" prefWidth="47.0" text="deposit" />
                   <Label layoutX="212.0" layoutY="85.0" text="P :" />
-                  <Label fx:id="investmentErrorMessage" layoutX="88.0" layoutY="178.0" prefHeight="18.0" prefWidth="275.0" text="Label" />
-                  <Button layoutX="244.0" layoutY="132.0" mnemonicParsing="false" text="Create" />
+                  <Label fx:id="InvestmentMessage" layoutX="88.0" layoutY="178.0" prefHeight="18.0" prefWidth="275.0" textFill="RED" />
+                  <Button layoutX="244.0" layoutY="132.0" mnemonicParsing="false" onAction="#makeInvestmentAccount" text="Create" />
                   <Button layoutX="524.0" layoutY="174.0" mnemonicParsing="false" onAction="#backButton" text="Back" />
                </children>
             </AnchorPane>

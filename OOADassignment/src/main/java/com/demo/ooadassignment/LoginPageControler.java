@@ -27,7 +27,7 @@ public class LoginPageControler {
 
         cusid = Customer.findCustomer(enteredUser, enteredPass);
 
-        if (cusid != 0) {
+        if (cusid != 900 ) {
             // Load next page
             FXMLLoader loader = new FXMLLoader(getClass().getResource("HomePage.fxml"));
             Parent root = loader.load();
